@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumPuz - Number Shifting</title>
+    <link rel="icon" type="image/icon" href="img/NumPusIcon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><button onclick="showMenu();" id="menu">☰</button><img src="img/NumPusIcon.png" alt="">NumPuz</h1>
+    </header>
+    <div class="manu-bar">
+        <ul>
+            <li><img src="img/NumPusIcon.png" alt="icon"></li>
+            <li><a href="#menu">Instruction</a> </li>
+            <li><a href="#menu">Levels</a> </li>
+            <li><a href="#menu">About</a> </li>
+        </ul>
+    </div>
+    <main>
+        <section>
+            <div class="score-board">
+                <div class="time">T - 00:00</div>
+                <a href="index.html"><button>NEW GAME</button></a>
+                <div class="moves">M : 0</div>
+            </div>
+            <div class="result">
+                <div class="container">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn">10</button>
+                    <button class="btn">11</button>
+                    <button class="btn">12</button>
+                    <button class="btn">13</button>
+                    <button class="btn">14</button>
+                    <button class="btn">15</button>
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <div class="score-board">
+                <button id="st-btn" onclick="start();">START GAME</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><b>Copyright &copy 2017 My Music.com</b></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
