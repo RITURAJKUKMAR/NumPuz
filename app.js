@@ -1,5 +1,7 @@
 let menuBar = document.querySelector(".manu-bar");
 let menu = false;
+
+
 function showMenu() {
     if (menu == false) {
         menu = true;
@@ -19,7 +21,7 @@ let time = document.querySelector(".time");
 let moves = document.querySelector(".moves");
 let stBtn = document.getElementById("st-btn");
 let btns = document.querySelectorAll(".btn");
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 let flag = false;
 let count = 0;
 let sec = 0;
@@ -75,13 +77,11 @@ function wonSms() {
         <h2>🎖️All the time and moves you took.<br> <br><br> TIME : ${min}:${sec} and MOVES : ${count}</h2>
         <br><br>
     </div>`
-
 }
 
 function checkMt() {
     for (let i = 0; i < 16; i++) {
         if (arr[i] == "") {
-
             return i;
         }
     }
@@ -139,5 +139,4 @@ function start() {
         }
     }
     insertElements();
-
 }
